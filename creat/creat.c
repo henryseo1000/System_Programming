@@ -4,11 +4,11 @@
 
 #define PERMS 0644
 
-char * filename = "newfile.cpp";
+char * filename = "newfile2.cpp";
 
 int main(){
     int fd;
-    if ((fd = open(filename, O_RDWR|O_CREAT, PERMS)) == -1){
+    if ((fd = creat(filename, PERMS)) == -1){
         printf("error");
         exit(1);
     }

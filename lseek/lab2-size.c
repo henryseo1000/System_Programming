@@ -20,9 +20,8 @@ int main(){
 
     printf("%s\n", outbuf);
 
-    len = lseek(fd, -5, SEEK_END) - lseek(fd, 0, SEEK_SET);
     lseek(fd, 0, SEEK_SET);
-    nread = read(fd, outbuf, len);
+    nread = read(fd, outbuf, 11);
     outbuf[nread] = '\0';
 
     printf("%s\n", outbuf);

@@ -25,8 +25,6 @@ int main(){
         total += nread;
     }
 
-    write(fd, buffer, BUFSIZE);
-
     close(fd);
     printf("%ld bytes read\n", total);
     exit(0);
