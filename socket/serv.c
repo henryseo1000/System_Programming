@@ -12,6 +12,7 @@ int main()
 	int	sock, length, fromlen;
 	struct sockaddr_un name, from;
 	char buf[1024];
+	fromlen = sizeof(from);
 	
 	sock = socket(PF_UNIX, SOCK_DGRAM, 0);
 
@@ -24,17 +25,9 @@ int main()
     }
 
 	printf("socket --> %s\n", NAME);
-    //memset(&from, 0, sizeof(from));
 
-	//chmod("./socket", 0777);
-
-	/*if(recvfrom(sock, buf, 1024, 0, (struct sockaddr *) &name, sizeof(name)) < 0){
+	if(recvfrom(sock, buf, 1024, 0, (struct sockaddr *) &from, &fromlen) < 0){
         printf("recvfrom error\n");
-        return 1;
-    }*/
-
-    if(read(sock, buf, 1024) < 0){
-        printf("read error\n");
         return 1;
     }
 	printf("%s\n", buf); 

@@ -15,7 +15,7 @@ int match(char *s1, char *s2){
 
 int main(int argc, char** argv){
     DIR * dir_ptr = NULL;
-    struct dirent *file = NULL;
+    struct  *file = NULL;
     char * dir = argv[1];
     char * suffix = argv[2];
 

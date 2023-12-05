@@ -8,7 +8,7 @@ int main()
 {
 	char **env = environ;
 	
-	sleep(100);
+	//sleep(100);
 
 	while(*env){
 		printf("%s\n",*env);
