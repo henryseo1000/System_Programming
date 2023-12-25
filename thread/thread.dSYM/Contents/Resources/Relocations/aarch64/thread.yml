@@ -1,8 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     "/Users/seohojun/Desktop/Documents/명지대/2023-2/시스템 프로그래밍/System_Programming/thread/thread"
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _thread_code, symObjAddr: 0x0, symBinAddr: 0x100003EE8, symSize: 0x2C }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _thread_code, symObjAddr: 0x0, symBinAddr: 0x100003EE8, symSize: 0x2C }
-  - { offsetInCU: 0x69, offset: 0x69, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x2C, symBinAddr: 0x100003F14, symSize: 0x50 }
-...
